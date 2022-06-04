@@ -14,7 +14,7 @@ Utilities for boostrapping secrets from 1Password password manager into the shel
 See [https://developer.1password.com/docs/cli/](https://developer.1password.com/docs/cli/) for details on how to install and authenticate with 1Pass.
 
 Included commands:
- - `savesecrets` - uses `op inject` to get stuff out of 1pass and save it to a file to be sources into the shell (ideally into a folder that's gitignored, as shown here). This only needs to be done periodically.
+ - `savesecrets` - uses `op inject` to get stuff out of 1pass and save it to a file to be sourced into the shell (ideally into a folder that's gitignored, as shown here). This only needs to be done periodically.
  - `loadsecrets` - just checks for the file and sources it.
  - `killsecrets` - rm -rf
 
