@@ -335,10 +335,8 @@ prompt_end() {
 # Context: user@hostname (who am I and where am I)
 context() {
   local user="$(whoami)"
-
-  #This is insane; why is this not working?
   
-  if [[ "$BULLETTRAIN_CONTEXT_HOSTNAME" = "Meagans-MBP-2017" ]]; then
+  if [[ "$BULLETTRAIN_CONTEXT_HOSTNAME" = "Ziraeal" ]]; then
     hn=" "
   else
     hn="@${BULLETTRAIN_CONTEXT_HOSTNAME}"

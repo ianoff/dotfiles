@@ -156,7 +156,7 @@ alias glp="_git_log_prettily"
 compdef _git glp=git-log
 
 
-#meaganoff additions
+#ianoff additions
 alias gcm='git commit -m'
 alias gbd='git branch -d'
 alias gbdd='git branch -D'
