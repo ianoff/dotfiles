@@ -19,7 +19,7 @@ plugins=(git python ianoff vscode npm emoji-clock 1password)
 mypath=/usr/local/bin
 
 #Some plugins for home, some for work
-if [[ $HOSTNAME == 'Zireael' ]]; then
+if [[ $HOSTNAME == 'BlackSpire' || $HOSTNAME == 'Zireael' ]]; then
     print "Setting up for Home..."
     plugins+=(flutter)
 else
