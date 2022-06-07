@@ -21,7 +21,12 @@ alias destroydangles="docker rmi $(docker images -f dangling=true -q)"
 
 alias all_containers="$(docker ps -a --format {{.Names}})"
 
-alias notify="curl -X POST --data-urlencode 'payload={\"channel\": \"@ian\", \"username\": \"Startup Complete\", \"text\": \"Your machine startup has finished!\", \"icon_emoji\": \":purple_heart:\"}' $SLACK_HOOK_URL"
+function notify() {
+    curl -X POST \
+        -H 'Content-type: application/json; charset=utf-8' \
+        --data '{ "channel": "@ian", "username": "Startup Complete", "icon_emoji": ":purple_heart:", "text": "Your machine startup has finished!" }' \
+        $SLACK_HOOK_URL
+}
 
 alias hvspin="./dc-rebuild.sh&&notify"
 alias hvspinall="hvdestroy&&hvbuild&&hvup&&hvinit&&notify"
@@ -44,4 +49,4 @@ function pypc() {
     fi
 }
 
-alias 1phv="op signin --account healthvana"
+alias ophv="op signin --account healthvana"
