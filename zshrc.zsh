@@ -15,7 +15,7 @@ ZSH_THEME="kaer-morhen"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
-plugins=(git python ianoff vscode npm emoji-clock 1password)
+plugins=(git git-extras python ianoff vscode npm emoji-clock 1password)
 mypath=/usr/local/bin
 
 #Some plugins for home, some for work

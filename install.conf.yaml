@@ -2,9 +2,9 @@
 
 - link:
     ~/.zshrc: 'zshrc.zsh'
-    ~/.oh-my-zsh/custom/plugins/git/git.plugin.zsh:
+    ~/.oh-my-zsh/custom/plugins/git-extras/git-extras.plugin.zsh:
         create: true
-        path: plugins/git.plugin.zsh
+        path: plugins/git-extras.plugin.zsh
     ~/.oh-my-zsh/custom/plugins/ianoff/ianoff.plugin.zsh:
         create: true
         path: plugins/ianoff.plugin.zsh
