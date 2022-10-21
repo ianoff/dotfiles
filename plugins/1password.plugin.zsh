@@ -7,7 +7,14 @@ fi
 
 # Bootstrap env variables from 1Password to a tmp dir
 # That is not committed to the repo
-ENV_FILE=~/Sites/dotfiles/dev.env
+if [[ $HOSTNAME == 'BlackSpire' || $HOSTNAME == 'Zireael' ]]; then
+    print "Secrets for Home..."
+    ENV_FILE=~/Sites/dotfiles/perk.env
+else
+    print "Secrets for Work..."
+    ENV_FILE=~/Sites/dotfiles/hv.env
+fi
+
 SECRETS_FILE=~/Sites/dotfiles/.tmp/secrets.zsh
 
 function loadsecrets() {
