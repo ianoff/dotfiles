@@ -5,7 +5,6 @@ else
     echo "Install 1password cli: https://app-updates.agilebits.com/product_history/CLI2"
 fi
 
-
 # Bootstrap env variables from 1Password to a tmp dir
 # That is not committed to the repo
 ENV_FILE=~/Sites/dotfiles/dev.env

@@ -21,7 +21,7 @@ mypath=/usr/local/bin
 #Some plugins for home, some for work
 if [[ $HOSTNAME == 'BlackSpire' || $HOSTNAME == 'Zireael' ]]; then
     print "Setting up for Home..."
-    plugins+=(flutter)
+    plugins+=(flutter perkolator)
 else
     print "Setting up for Work..."
     plugins+=(healthvana docker)
@@ -29,7 +29,7 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH=PATH:$mypath:$PATH
+export PATH=PATH:/opt/homebrew/bin:$mypath:$PATH
 
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 
@@ -40,3 +40,5 @@ NODE_OPTIONS="$NODE_OPTIONS --openssl-legacy-provider --max-old-space-size=8192"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

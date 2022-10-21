@@ -14,6 +14,9 @@
     ~/.oh-my-zsh/custom/plugins/1password/1password.plugin.zsh:
         create: true
         path: plugins/1password.plugin.zsh
+    ~/.oh-my-zsh/custom/plugins/perkolator/perkolator.plugin.zsh:
+        create: true
+        path: plugins/perkolator.plugin.zsh
     ~/.oh-my-zsh/custom/montague_st.zsh-theme: 'themes/montague_st.zsh-theme'
     ~/.oh-my-zsh/custom/kaer-morhen.zsh-theme: 'themes/kaer-morhen.zsh-theme'
     ~/.oh-my-zsh/custom/bullet-train.zsh-theme: 'themes/bullet-train.zsh-theme'
