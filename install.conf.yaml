@@ -2,15 +2,15 @@
 
 - link:
     ~/.zshrc: 'zshrc.zsh'
+    ~/.oh-my-zsh/custom/plugins/font-install/font-install.plugin.zsh:
+        create: true
+        path: plugins/font-install.plugin.zsh
     ~/.oh-my-zsh/custom/plugins/git-extras/git-extras.plugin.zsh:
         create: true
         path: plugins/git-extras.plugin.zsh
     ~/.oh-my-zsh/custom/plugins/ianoff/ianoff.plugin.zsh:
         create: true
         path: plugins/ianoff.plugin.zsh
-    ~/.oh-my-zsh/custom/plugins/healthvana/healthvana.plugin.zsh:
-        create: true
-        path: plugins/healthvana.plugin.zsh
     ~/.oh-my-zsh/custom/plugins/1password/1password.plugin.zsh:
         create: true
         path: plugins/1password.plugin.zsh
@@ -20,6 +20,7 @@
     ~/.oh-my-zsh/custom/montague_st.zsh-theme: 'themes/montague_st.zsh-theme'
     ~/.oh-my-zsh/custom/kaer-morhen.zsh-theme: 'themes/kaer-morhen.zsh-theme'
     ~/.oh-my-zsh/custom/bullet-train.zsh-theme: 'themes/bullet-train.zsh-theme'
+    ~/.oh-my-zsh/custom/revenge.zsh-theme: 'themes/revenge.zsh-theme'
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
