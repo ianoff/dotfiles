@@ -4,7 +4,7 @@ alias sb="code"
 alias vs="code"
 alias yanr="yarn"
 alias profile="cd ~/Sites/dotfiles && code ."
-alias ianoff="cd ~/Sites/ianoff-nobelium && code ."
+alias ianoff="cd ~/Sites/_sites/ianoff-nobelium && code ."
 alias dc="docker compose"
 
 ### HOME ###
@@ -12,9 +12,7 @@ alias npm-do='PATH=$(npm bin):$PATH'
 
 alias restartFinder='killall Finder /System/Library/CoreServices/Finder.app'
 
-
-
-export PATH=PATH:/Users/ianoff/flutter/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
+export PATH=PATH:/Users/ianoff/flutter/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/calibre.app/Contents/MacOS/:$PATH
 
 #--track=javascript --exercise=list-ops
 function exgo() {
@@ -47,4 +45,20 @@ function exgo() {
             echo "Other track type; please perform a manual install."
         ;;
     esac
+}
+
+function advent() {
+    AD_PATH=~/Sites/_learning/advent_of_code
+    DAY=$2
+    YEAR=$1
+    cd $AD_PATH
+    cd $YEAR
+    mkdir $DAY
+    cd $DAY
+    cp -i $AD_PATH/template/* ./
+    for file in *.js
+    do
+        mv "$file" "${file/day/$DAY}"
+    done
+    code .
 }

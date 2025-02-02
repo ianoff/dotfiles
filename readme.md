@@ -3,7 +3,7 @@
 Uses [Dotbot](https://github.com/anishathalye/dotbot) as a submodule, as described in that project's docs. I have written my own config in `install.conf.yaml`.
 
 ## Install
-Go in the folder, run `install`. Restart shells to source.
+Go in the folder, run `./install`. Restart shells to source.
 
 ## Plugins
 Includes custom zsh plugins I've written for myself over the years.
@@ -17,9 +17,6 @@ Included commands:
  - `savesecrets` - uses `op inject` to get stuff out of 1pass and save it to a file to be sourced into the shell (ideally into a folder that's gitignored, as shown here). This only needs to be done periodically.
  - `loadsecrets` - just checks for the file and sources it.
  - `killsecrets` - rm -rf
-
-### Healthvana & Ianoff Plugins
-Just a collection of commands I use about a thousand times a day for random stuff. Likely not useful to anyone else on the planet. 😅
 
 ## Themes
 
