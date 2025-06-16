@@ -51927,7 +51927,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>source ~/Sites/h/venv/bin/activate</string>
+			<string>source ~/Dev/h/venv/bin/activate</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -52677,7 +52677,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/ian/Sites/h</string>
+			<string>/Users/ian/Dev/h</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -53696,7 +53696,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/ian/Sites/h</string>
+			<string>/Users/ian/Dev/h</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -54755,7 +54755,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/ian/Sites/hvnext/</string>
+			<string>/Users/ian/Dev/hvnext/</string>
 		</dict>
 	</array>
 	<key>PMPrintingExpandedStateForPrint2</key>

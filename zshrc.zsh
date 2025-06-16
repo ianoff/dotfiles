@@ -27,13 +27,13 @@ mypath=/usr/local/bin
 
 
 #Some plugins for home, some for work
-if [[ $HOSTNAME == 'BlackSpire' || $HOSTNAME == 'Zireael' ]]; then
-    print "Setting up for Home..."
+# if [[ $HOSTNAME == 'BlackSpire' || $HOSTNAME == 'Zireael' ]]; then
+    # print "Setting up for Home..."
     plugins+=(flutter perkolator)
-else
-    print "Setting up for Work..."
-    plugins+=(healthvana docker)
-fi
+# else
+#     print "Setting up for Work..."
+#     plugins+=( docker)
+# fi
 
 source $ZSH/oh-my-zsh.sh
 export PATH=PATH:/usr/bin/python3:/opt/homebrew/bin:$mypath:$PATH

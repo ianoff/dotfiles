@@ -1,8 +1,8 @@
-alias hv="cd ~/Sites/h/"
-alias hvnext="cd ~/Sites/hvnext/"
-alias helpscout="cd ~/Sites/fetch-help-scout/"
+alias hv="cd ~/Dev/h/"
+alias hvnext="cd ~/Dev/hvnext/"
+alias helpscout="cd ~/Dev/fetch-help-scout/"
 alias wch="yarn watch"
-alias githooks="cd ~/Sites/h/.git/hooks/ && code ."
+alias githooks="cd ~/Dev/h/.git/hooks/ && code ."
 alias calc="dc"
 alias dc="docker compose"
 

@@ -9,13 +9,13 @@ fi
 # That is not committed to the repo
 if [[ $HOSTNAME == 'BlackSpire' || $HOSTNAME == 'Zireael' ]]; then
     print "Secrets for Home..."
-    ENV_FILE=~/Sites/dotfiles/perk.env
+    ENV_FILE=~/Dev/dotfiles/perk.env
 else
     print "Secrets for Work..."
-    ENV_FILE=~/Sites/dotfiles/hv.env
+    ENV_FILE=~/Dev/dotfiles/hv.env
 fi
 
-SECRETS_FILE=~/Sites/dotfiles/.tmp/secrets.zsh
+SECRETS_FILE=~/Dev/dotfiles/.tmp/secrets.zsh
 
 function loadsecrets() {
     if [ -f "$SECRETS_FILE" ]; then
