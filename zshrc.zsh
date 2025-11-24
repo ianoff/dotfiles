@@ -29,7 +29,7 @@ mypath=/usr/local/bin
 #Some plugins for home, some for work
 # if [[ $HOSTNAME == 'BlackSpire' || $HOSTNAME == 'Zireael' ]]; then
     # print "Setting up for Home..."
-    plugins+=(flutter perkolator)
+    plugins+=(kelpie)
 # else
 #     print "Setting up for Work..."
 #     plugins+=( docker)
@@ -68,3 +68,5 @@ esac
 alias pn=pnpm
 # Created by `pipx` on 2025-01-04 16:36:39
 export PATH="$PATH:/Users/ianoff/.local/bin"
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+export ANDROID_HOME=$HOME/Library/Android/sdk && export PATH=$PATH:$ANDROID_HOME/emulator && export PATH=$PATH:$ANDROID_HOME/platform-tools

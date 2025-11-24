@@ -1,10 +1,8 @@
 
 # Universal
-alias sb="code"
-alias vs="code"
 alias yanr="yarn"
-alias profile="cd ~/Dev/dotfiles && code ."
-alias ianoff="cd ~/Dev/_sites/ianoff-nobelium && code ."
+alias profile="cd ~/Dev/dotfiles && cursor ."
+alias ianoff="cd ~/Dev/_sites/ianoff-nobelium && cursor ."
 alias dc="docker compose"
 
 ### HOME ###
