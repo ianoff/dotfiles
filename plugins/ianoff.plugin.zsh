@@ -5,6 +5,18 @@ alias profile="cd ~/Dev/dotfiles && cursor ."
 alias ianoff="cd ~/Dev/_sites/ianoff-nobelium && cursor ."
 alias dc="docker compose"
 
+function serve() {
+  local port="${1:-8000}"
+
+  python3 -m http.server "$port" >/dev/null 2>&1 &
+  local pid=$!
+
+  sleep 0.4
+  open "http://localhost:$port"
+
+  echo "Serving on http://localhost:$port (pid $pid)"
+}
+
 ### HOME ###
 alias npm-do='PATH=$(npm bin):$PATH'
 
@@ -60,3 +72,5 @@ function advent() {
     done
     code .
 }
+
+alias normalize="~/Movies/scripts/normalize.sh"

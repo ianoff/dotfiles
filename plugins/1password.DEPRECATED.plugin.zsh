@@ -7,13 +7,13 @@ fi
 
 # Bootstrap env variables from 1Password to a tmp dir
 # That is not committed to the repo
-if [[ $HOSTNAME == 'BlackSpire' || $HOSTNAME == 'Zireael' ]]; then
+# if [[ $HOSTNAME == 'BlackSpire' || $HOSTNAME == 'Zireael' ]]; then
     print "Secrets for Home..."
     ENV_FILE=~/Dev/dotfiles/perk.env
-else
-    print "Secrets for Work..."
-    ENV_FILE=~/Dev/dotfiles/hv.env
-fi
+# else
+#     print "Secrets for Work..."
+#     ENV_FILE=~/Dev/dotfiles/hv.env
+# fi
 
 SECRETS_FILE=~/Dev/dotfiles/.tmp/secrets.zsh
 

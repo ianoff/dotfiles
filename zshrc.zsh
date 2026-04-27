@@ -15,14 +15,14 @@ HOSTNAME=$(hostname)
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="pygmalion"
 
 # Comment this out to disable bi-weekly auto-update checks
 #DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
-plugins=(git git-extras ianoff vscode npm emoji-clock 1password font-install)
+plugins=(git git-extras ianoff vscode npm emoji-clock font-install)
 mypath=/usr/local/bin
 
 
@@ -70,3 +70,4 @@ alias pn=pnpm
 export PATH="$PATH:/Users/ianoff/.local/bin"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 export ANDROID_HOME=$HOME/Library/Android/sdk && export PATH=$PATH:$ANDROID_HOME/emulator && export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$HOME/.maestro/bin

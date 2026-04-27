@@ -11,9 +11,6 @@
     ~/.oh-my-zsh/custom/plugins/ianoff/ianoff.plugin.zsh:
         create: true
         path: plugins/ianoff.plugin.zsh
-    ~/.oh-my-zsh/custom/plugins/1password/1password.plugin.zsh:
-        create: true
-        path: plugins/1password.plugin.zsh
     ~/.oh-my-zsh/custom/plugins/perkolator/perkolator.plugin.zsh:
         create: true
         path: plugins/perkolator.plugin.zsh
