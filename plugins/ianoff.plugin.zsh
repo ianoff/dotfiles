@@ -22,7 +22,7 @@ alias npm-do='PATH=$(npm bin):$PATH'
 
 alias restartFinder='killall Finder /System/Library/CoreServices/Finder.app'
 
-export PATH=PATH:/Users/ianoff/flutter/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/calibre.app/Contents/MacOS/:/Applications/calibre.app/Contents/MacOS/:$PATH
+export PATH=/Users/ianoff/flutter/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/calibre.app/Contents/MacOS/:/Applications/calibre.app/Contents/MacOS/:$PATH
 
 #--track=javascript --exercise=list-ops
 function exgo() {

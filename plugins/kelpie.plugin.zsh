@@ -1,7 +1,6 @@
 alias kelpie="cd ~/Dev/kelpie/"
 alias cm="yarn commit"
 export AWS_PROFILE=kelpie
-export SCHEDULE_RECONCILE_SECRET=97fb0cab1547297491864ddb3e2e1e821a7ff129c6b6ddd45a980e99bbb53036
 
 function prod_shell {
   local CLUSTER="${1:-production}"
@@ -33,9 +32,6 @@ function prod_shell {
 }
 
 export PATH="$PATH":"$HOME/.maestro/bin"
-export PROD_DB_URL="postgresql://kelpie:D4xoGQ3eDhvWksneA@kelpie-production.ch0iqwssco35.us-west-2.rds.amazonaws.com:5432/kelpie?sslmode=require"
-
-export PROD_DB_HOST="kelpie-production.ch0iqwssco35.us-west-2.rds.amazonaws.com"
 
 function prod_db {
   ssh -i ~/.ssh/kelpie-bastion.pem \
