@@ -2,9 +2,6 @@
 
 - link:
     ~/.zshrc: 'zshrc.zsh'
-    ~/.oh-my-zsh/custom/plugins/font-install/font-install.plugin.zsh:
-        create: true
-        path: plugins/font-install.plugin.zsh
     ~/.oh-my-zsh/custom/plugins/git-extras/git-extras.plugin.zsh:
         create: true
         path: plugins/git-extras.plugin.zsh
