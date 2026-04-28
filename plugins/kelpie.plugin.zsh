@@ -32,6 +32,12 @@ function prod_shell {
 }
 
 export PATH="$PATH":"$HOME/.maestro/bin"
+export JAVA_HOME="$(
+  /usr/libexec/java_home -v 17 2>/dev/null || echo "/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
+)"
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export ANDROID_SDK_ROOT="$ANDROID_HOME"
+export PATH="$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools"
 
 # Normal 1Password values (resolved by op run)
 export ENV_ID="op://Kelpie/Secrets/ProdEnvID"
